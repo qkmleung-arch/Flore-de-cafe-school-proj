@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florè de Cafè - Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="page-container">
+      <aside class="sidebar">
+        <nav aria-label="Main Navigation">
+          <img src="images/flore-de-cafe.png" alt="Logo" class="logo">
+          <ul id="navi">
+            <li>
+              <a href="index.html" id="myHome">
+                <br>HOME </a>
+            </li>
+            <li>
+              <a href="coffee-shop.html" id="myCoffee" class="active-page">
+                <br>COFFEE </a>
+            </li>
+            <li>
+              <a href="flower-shop.html" id="myFlowers">
+                <br>FLOWERS </a>
+            </li>
+            <li>
+              <a href="about.html" id="myAbout">
+                <br>ABOUT US </a>
+            </li>
+            <li>
+              <a href="bloomrewards.html" id="myBloom">
+                <br>REWARDS </a>
+            </li>
+          </ul>
+          <div class="cart-wrapper">
+            <a href="cart.html">
+              <img src="https://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg" class="cart">
+            </a>
+            <span id="cartCount">0</span>
+          </div>
+        </nav>
+      </aside>
+      <div class="main-content-area">
+        <header>
+          <h1 id="season-category">Our Coffee Collection</h1>
+          <div class="header-right">
+            <div class="user-profile">
+              <div class="profile-pic"></div>
+              <span>User</span>
+            </div>
+          </div>
+        </header>
+        <main class="main-content">
+          <div class="filter-sort-bar">
+            <div class="filters">
+              <button class="filter-pill active" data-filter="all">All</button>
+              <button class="filter-pill" data-filter="hot">Hot Coffee</button>
+              <button class="filter-pill" data-filter="iced">Iced Coffee</button>
+              <button class="filter-pill" data-filter="beans">Beans</button>
+              <button class="filter-pill" data-filter="seasonal">Seasonal</button>
+            </div>
+            <div class="sort-dropdown">
+              <span>Sort: </span>
+              <select id="sortSelect">
+                <option value="popularity">Popularity</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+          <div class="coffee-grid" id="coffeeGrid">
+            <div class="coffee-card" data-category="hot" data-price="160" data-popularity="120">
+              <div class="card-image">
+                <img src="images/sunrise-pour.png">
+              </div>
+              <div class="card-info">
+                <h3>Sunrise Pour</h3>
+                <p class="desc">Gentle pour-over with bright notes of citrus.</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 4.8
+                </div>
+                <div class="card-footer">
+                  <span class="price">₱160</span>
+                  <button class="add-btn" onclick="addToCart('Sunrise Pour', 160)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="coffee-card" data-category="beans" data-price="150" data-popularity="250">
+              <div class="card-image">
+                <img src="images/house-blend.PNG">
+              </div>
+              <div class="card-info">
+                <h3>House Blend</h3>
+                <p class="desc">Balanced, smooth, notes of caramel.</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 4.9
+                </div>
+                <div class="card-footer">
+                  <span class="price">₱150</span>
+                  <button class="add-btn" onclick="addToCart('House Blend', 150)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="coffee-card" data-category="hot" data-price="150" data-popularity="98">
+              <div class="card-image">
+                <img src="images/vanilla-bean.png">
+              </div>
+              <div class="card-info">
+                <h3>Vanilla Bean</h3>
+                <p class="desc">Medium roast with real vanilla finish.</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 4.7
+                </div>
+                <div class="card-footer">
+                  <span class="price">₱150</span>
+                  <button class="add-btn" onclick="addToCart('Vanilla Bean', 150)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="coffee-card" data-category="seasonal" data-price="170" data-popularity="85">
+              <div class="card-image">
+                <img src="images/cinnamon-hollow.png">
+              </div>
+              <div class="card-info">
+                <h3>Cinnamon Hollow</h3>
+                <p class="desc">Spiced coffee with a soft cocoa background.</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 4.6
+                </div>
+                <div class="card-footer">
+                  <span class="price">₱170</span>
+                  <button class="add-btn" onclick="addToCart('Cinnamon Hollow', 170)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="coffee-card" data-category="seasonal" data-price="160" data-popularity="60">
+              <div class="card-image">
+                <img src="images/vanilla-orchard-brew.png">
+              </div>
+              <div class="card-info">
+                <h3>Vanilla Orchard</h3>
+                <p class="desc">Warm harvest sweetness.</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 4.5
+                </div>
+                <div class="card-footer">
+                  <span class="price">₱160</span>
+                  <button class="add-btn" onclick="addToCart('Vanilla Orchard', 160)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="coffee-card" data-category="hot" data-price="140" data-popularity="150">
+              <div class="card-image">
+                <img src="images/black-harbor.png">
+              </div>
+              <div class="card-info">
+                <h3>Black Harbor</h3>
+                <p class="desc">Bold, dark roast espresso.</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 4.8
+                </div>
+                <div class="card-footer">
+                  <span class="price">₱140</span>
+                  <button class="add-btn" onclick="addToCart('Black Harbor', 140)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="coffee-card" data-category="iced" data-price="170" data-popularity="200">
+              <div class="card-image">
+                <img src="images/caramel-corner-latte.png">
+              </div>
+              <div class="card-info">
+                <h3>Caramel Corner</h3>
+                <p class="desc">Creamy latte with slow-melted caramel.</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 4.9
+                </div>
+                <div class="card-footer">
+                  <span class="price">₱170</span>
+                  <button class="add-btn" onclick="addToCart('Caramel Corner', 170)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="coffee-card" data-category="iced" data-price="170" data-popularity="110">
+              <div class="card-image">
+                <img src="images/lavender-bend.png">
+              </div>
+              <div class="card-info">
+                <h3>Lavender Bend</h3>
+                <p class="desc">Chilled coffee with lavender syrup.</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 4.7
+                </div>
+                <div class="card-footer">
+                  <span class="price">₱170</span>
+                  <button class="add-btn" onclick="addToCart('Lavender Bend', 170)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <aside class="rightbar">
+        <div class="purchase-panel">
+          <div class="wallet">
+            <div class="wallet-title">Available Balance</div>
+            <div class="wallet-money" id="sidebarPrice">₱0</div>
+            <div class="wallet-add">
+              <input id="addMoneyInput" type="number" placeholder="Amount" min="1">
+              <button id="addMoneyBtn">+</button>
+            </div>
+          </div>
+        </div>
+        <h2>Your Tray</h2>
+        <div id="sidebarCartItems"></div>
+        <div id="cartTotal" style="margin-top:18px; font-weight:700; text-align: right;">Total: ₱0</div>
+        <button class="buyNow">Checkout</button>
+      </aside>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

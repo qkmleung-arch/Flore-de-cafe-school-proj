@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florè de Cafè</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="season-category">Choose Category</h1>
+    </header>
+    <div class="page">
+      <aside class="sidebar">
+        <nav aria-label="Main Navigation">
+          <img src="images/flore-de-cafe.jpg" alt="Florè de Cafè Shop" class="logo">
+          <ul id="navi">
+            <li>
+              <a href="index.html" id="myHome">
+                <br>HOME </a>
+            </li>
+            <li>
+              <a href="coffee-shop.html" id="myCoffee" class="active-page">
+                <br>COFFEE </a>
+            </li>
+            <li>
+              <a href="flower-shop.html" id="myFlowers">
+                <br>FLOWERS </a>
+            </li>
+            <li>
+              <a href="about.html" id="myAbout">
+                <br>ABOUT US </a>
+            </li>
+            <li>
+              <a href="bloomrewards.html" id="myBloom">
+                <br>REWARDS </a>
+            </li>
+          </ul>
+          <div class="cart-wrapper">
+            <a href="cart.html" class="cart-link" title="View Cart">
+              <img src="https://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg" alt="Cart" class="cart">
+            </a>
+            <span>0</span>
+          </div>
+        </nav>
+      </aside>
+      <main class="content">
+        <ul class="season-list" id="seasons">
+          <li>
+            <a href="coffee-shop.html" class="seasons-link">
+              <img src="images/everyday-coffee.png" class="seasonal">
+              </br>
+              <p class="blend-fonts">Everyday Coffee</p>
+            </a>
+          </li>
+          <li>
+            <a href="spring-shop.html" class="seasons-link">
+              <img src="images/spring-collection.png" class="seasonal">
+              </br>
+              <p class="blend-fonts">Spring Blends</p>
+            </a>
+          </li>
+          <li>
+            <a href="summer-shop.html" class="seasons-link">
+              <img src="images/summer-collection.png" class="seasonal">
+              </br>
+              <p class="blend-fonts">Summer Blends</p>
+            </a>
+          </li>
+          <li>
+            <a href="autumn-shop.html" class="seasons-link">
+              <img src="images/autumn-collection.png" class="seasonal">
+              </br>
+              <p class="blend-fonts">Autumn Blends</p>
+            </a>
+          </li>
+          <li>
+            <a href="winter-shop.html" class="seasons-link">
+              <img src="images/winter-collection.png" class="seasonal">
+              </br>
+              <p class="blend-fonts">Winter Blends</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="winter">
+          <li>
+            <img src="images/rosemary-pine-cold-foam-brew.png" class="regular">
+            </br>
+            <p class="blend-fonts">
+            <dl></dl>
+            </p>
+          </li>
+          <li>
+            <dd class="rosemary">
+              <b>Rosemary Pine Cold Foam Brew <label id="rosemaryprice">₱190</label>
+              </b>
+              <br>A bold, slow-steeped cold brew topped with a velvety cold <br>foam infused with a subtle, aromatic rosemary and pine syrup. <br> The drink is clean, crisp, and reminiscent of a snowy winter forest. <label>
+                </br>
+                </br>SIZE <label class="label-qty">QUANTITY</label>
+                </br>
+                <div>
+                  <button class="size-rosemary" id="rosemaryS" data-price="190">S</button>
+                  <button class="size-rosemary" id="rosemaryM" data-price="205">M</button>
+                  <button class="size-rosemary" id="rosemaryL" data-price="220">L</button>
+                  <button class="qty-rosemary" id="decreaseRosemary">-</button>
+                  <label id="countRosemary">1</label>
+                  <button class="qty-rosemary" id="increaseRosemary">+</button>
+                </div>
+                <br>
+                <br>
+                <button class="addCart" id="cartRosemary" data-img="images/rosemary-pine-cold-foam-brew.png">Add to cart</button>
+                <button class="buyNow">Buy now</button>
+              </label>
+            </dd>
+          </li>
+          <li>
+            <img src="images/gingerbread-hellebore-mocha.png" class="regular">
+            </br>
+            <p class="blend-fonts">
+            <dl></dl>
+            </p>
+          </li>
+          <li>
+            <dd class="gingerbread">
+              <b>Gingerbread Hellebore Mocha <label id="gingerbreadprice">₱210</label>
+              </b>
+              <br>A rich, dark chocolate mocha blended with a spiced gingerbread <br>syrup and a splash of milk. Topped with whipped cream and a candied <br>lemon slice, echoing the Hellebore's enduring winter bloom. <label>
+                </br>
+                </br>SIZE <label class="label-qty">QUANTITY</label>
+                </br>
+                <div>
+                  <button class="size-gingerbread" id="gingerbreadS" data-price="210">S</button>
+                  <button class="size-gingerbread" id="gingerbreadM" data-price="225">M</button>
+                  <button class="size-gingerbread" id="gingerbreadL" data-price="240">L</button>
+                  <button class="qty-gingerbread" id="decreaseGingerbread">-</button>
+                  <label id="countGingerbread">1</label>
+                  <button class="qty-gingerbread" id="increaseGingerbread">+</button>
+                </div>
+                <br>
+                <br>
+                <button class="addCart" id="cartGingerbread" data-img="images/gingerbread-hellebore-mocha.png">Add to cart</button>
+                <button class="buyNow">Buy now</button>
+              </label>
+            </dd>
+          </li>
+        </ul>
+      </main>
+      <aside class="rightbar">
+        <div class="purchase-panel">
+          <div class="wallet">
+            <div class="wallet-title">Wallet</div>
+            <div class="wallet-money" id="sidebarPrice">₱0</div>
+            <div class="wallet-add">
+              <input id="addMoneyInput" type="number" placeholder="Amount (₱)" min="1" step="1">
+              <button id="addMoneyBtn">Add Money</button>
+            </div>
+          </div>
+        </div>
+        <h2>Cart</h2>
+        <div id="sidebarCartItems"></div>
+        <div id="cartTotal" style="margin-top:18px; font-weight:700;">Total: ₱0</div>
+        <div class="purchase-actions">
+          <button class="buyNow">Buy now</button>
+        </div>
+      </aside>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

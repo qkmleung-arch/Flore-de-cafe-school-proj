@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florè de Cafè - About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="page-container">
+      <aside class="sidebar">
+        <nav aria-label="Main Navigation">
+          <img src="images/flore-de-cafe.png" alt="Logo" class="logo">
+          <ul id="navi">
+            <li>
+              <a href="index.html" id="myHome">
+                <br>HOME </a>
+            </li>
+            <li>
+              <a href="coffee-shop.html" id="myCoffee">
+                <br>COFFEE </a>
+            </li>
+            <li>
+              <a href="flower-shop.html" id="myFlowers">
+                <br>FLOWERS </a>
+            </li>
+            <li>
+              <a href="about.html" id="myAbout" class="active-page">
+                <br>ABOUT US </a>
+            </li>
+            <li>
+              <a href="bloomrewards.html" id="myBloom">
+                <br>REWARDS </a>
+            </li>
+          </ul>
+          <div class="cart-wrapper">
+            <a href="cart.html">
+              <img src="https://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg" class="cart">
+            </a>
+            <span id="cartCount">0</span>
+          </div>
+        </nav>
+      </aside>
+      <div class="main-content-area">
+        <header>
+          <h1 id="season-category">Our Story</h1>
+          <div class="header-right">
+            <div class="user-profile">
+              <div class="profile-pic"></div>
+              <span>User</span>
+            </div>
+          </div>
+        </header>
+        <main class="main-content">
+          <div class="about-layout">
+            <div class="about-text-content">
+              <h2 class="brand-tagline">Artistry, Aroma, and Calm.</h2>
+              <h1>Floré de Café</h1>
+              <div class="divider-line"></div>
+              <p>Founded by a group of passionate individuals who share a love for both coffee and the gentle artistry of flowers, Floré de Café began with a simple vision: to create a space where people can find warmth, inspiration, and peace in every cup.</p>
+              <p>Floré de Café is a flower-inspired café that blends the comforting aroma of coffee with the timeless beauty of blooms. Every drink we craft reflects a season, while every flower we offer carries a story—from purity and hope to love and resilience.</p>
+              <div class="about-signatures">
+                <span>Est. November 2025</span>
+              </div>
+            </div>
+            <div class="about-image-gallery">
+              <div class="gallery-item main-img">
+                <img src="images/about-us-one.png">
+              </div>
+              <div class="gallery-item sub-img">
+                <img src="images/about-us-two.png">
+              </div>
+              <div class="gallery-item sub-img">
+                <img src="images/about-us-three.png">
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <aside class="rightbar">
+        <div class="purchase-panel">
+          <div class="wallet">
+            <div class="wallet-title">Available Balance</div>
+            <div class="wallet-money" id="sidebarPrice">₱0</div>
+            <div class="wallet-add">
+              <input id="addMoneyInput" type="number" placeholder="Amount" min="1">
+              <button id="addMoneyBtn">+</button>
+            </div>
+          </div>
+        </div>
+        <h2>Your Tray</h2>
+        <div id="sidebarCartItems"></div>
+        <div id="cartTotal" style="margin-top:18px; font-weight:700; text-align: right;">Total: ₱0</div>
+        <button class="buyNow">Checkout</button>
+      </aside>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

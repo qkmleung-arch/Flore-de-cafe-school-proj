@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florè de Cafè</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="season-category">Choose Category</h1>
+    </header>
+    <div class="page">
+      <aside class="sidebar">
+        <nav aria-label="Main Navigation">
+          <img src="images/flore-de-cafe.jpg" alt="Florè de Cafè Shop" class="logo">
+          <ul id="navi">
+            <li>
+              <a href="index.html" id="myHome">
+                <br>HOME </a>
+            </li>
+            <li>
+              <a href="coffee-shop.html" id="myCoffee"  class="active-page">
+                <br>COFFEE </a>
+            </li>
+            <li>
+              <a href="flower-shop.html" id="myFlowers">
+                <br>FLOWERS </a>
+            </li>
+            <li>
+              <a href="about.html" id="myAbout">
+                <br>ABOUT US </a>
+            </li>
+            <li>
+              <a href="bloomrewards.html" id="myBloom">
+                <br>REWARDS </a>
+            </li>
+          </ul>
+          <div class="cart-wrapper">
+            <a href="cart.html" class="cart-link" title="View Cart">
+              <img src="https://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg" alt="Cart" class="cart">
+            </a>
+            <span>0</span>
+          </div>
+        </nav>
+      </aside>
+      <main class="content">
+        <ul class="season-list" id="seasons">
+          <li>
+            <a href="coffee-shop.html" class="seasons-link">
+              <img src="images/everyday-coffee.png" class="seasonal">
+              </br>
+              <p class="blend-fonts">Everyday Coffee</p>
+            </a>
+          </li>
+          <li>
+            <a href="spring-shop.html" class="seasons-link">
+              <img src="images/spring-collection.png" class="seasonal">
+              </br>
+              <p class="blend-fonts">Spring Blends</p>
+            </a>
+          </li>
+          <li>
+            <a href="summer-shop.html" class="seasons-link">
+              <img src="images/summer-collection.png" class="seasonal">
+              </br>
+              <p class="blend-fonts">Summer Blends</p>
+            </a>
+          </li>
+          <li>
+            <a href="autumn-shop.html" class="seasons-link">
+              <img src="images/autumn-collection.png" class="seasonal">
+              </br>
+              <p class="blend-fonts">Autumn Blends</p>
+            </a>
+          </li>
+          <li>
+            <a href="winter-shop.html" class="seasons-link">
+              <img src="images/winter-collection.png" class="seasonal">
+              </br>
+              <p class="blend-fonts">Winter Blends</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="autumn">
+          <li>
+            <img src="images/chrysanthemum-spice-macchiato.png" class="regular">
+            </br>
+            <p class="blend-fonts">
+            <dl></dl>
+            </p>
+          </li>
+          <li>
+            <dd class="chrysanthemum">
+              <b>Chrysanthemum Spice Macchiato <label id="chrysanthemumprice">₱210</label>
+              </b>
+              <br>A warming, layered macchiato featuring steamed milk infused with <br>a delicate chrysanthemum tea concentrate and a drizzle of rich brown sugar <br> spice syrup. Finished with a classic mark of espresso on top. <label>
+                </br>
+                </br>SIZE <label class="label-qty">QUANTITY</label>
+                </br>
+                <div>
+                  <button class="size-chrysanthemum" id="chrysanthemumS" data-price="210">S</button>
+                  <button class="size-chrysanthemum" id="chrysanthemumM" data-price="225">M</button>
+                  <button class="size-chrysanthemum" id="chrysanthemumL" data-price="240">L</button>
+                  <button class="qty-chrysanthemum" id="decreaseChrysanthemum">-</button>
+                  <label id="countChrysanthemum">1</label>
+                  <button class="qty-chrysanthemum" id="increaseChrysanthemum">+</button>
+                </div>
+                <br>
+                <br>
+                <button class="addCart" id="cartChrysanthemum" data-img="images/chrysanthemum-spice-macchiato.png">Add to cart</button>
+                <button class="buyNow">Buy now</button>
+              </label>
+            </dd>
+          </li>
+          <li>
+            <img src="images/jasmine-coconut-latte2.png" class="regular">
+            </br>
+            <p class="blend-fonts">
+            <dl></dl>
+            </p>
+          </li>
+          <li>
+            <dd class="jasmine2">
+              <b>Jasimine Coconut Latte (Hot) <label id="jasmine2price">₱190</label>
+              </b>
+              <br>A comforting and richly flavored latte featuring a blend of vanilla and smoky <br>cardamom spice. It is topped with a dusting of cinnamon and a <br>subtle orange sugar that mirrors. <label>
+                </br>
+                </br>SIZE <label class="label-qty">QUANTITY</label>
+                </br>
+                <div>
+                  <button class="size-jasmine2" id="jasmine2S" data-price="190">S</button>
+                  <button class="size-jasmine2" id="jasmine2M" data-price="205">M</button>
+                  <button class="size-jasmine2" id="jasmine2L" data-price="220">L</button>
+                  <button class="qty-jasmine2" id="decreaseJasmine2">-</button>
+                  <label id="countJasmine2">1</label>
+                  <button class="qty-jasmine2" id="increaseJasmine2">+</button>
+                </div>
+                <br>
+                <br>
+                <button class="addCart" id="cartJasmine2" data-img="images/jasmine-coconut-latte2.png">Add to cart</button>
+                <button class="buyNow">Buy now</button>
+              </label>
+            </dd>
+          </li>
+        </ul>
+      </main>
+      <aside class="rightbar">
+        <div class="purchase-panel">
+          <div class="wallet">
+            <div class="wallet-title">Wallet</div>
+            <div class="wallet-money" id="sidebarPrice">₱0</div>
+            <div class="wallet-add">
+              <input id="addMoneyInput" type="number" placeholder="Amount (₱)" min="1" step="1">
+              <button id="addMoneyBtn">Add Money</button>
+            </div>
+          </div>
+        </div>
+        <h2>Cart</h2>
+        <div id="sidebarCartItems"></div>
+        <div id="cartTotal" style="margin-top:18px; font-weight:700;">Total: ₱0</div>
+        <div class="purchase-actions">
+          <button class="buyNow">Buy now</button>
+        </div>
+      </aside>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

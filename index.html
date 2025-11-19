@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florè de Cafè</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="page-container">
+      <aside class="sidebar">
+        <nav aria-label="Main Navigation">
+          <img src="images/flore-de-cafe.png" alt="Florè de Cafè Shop" class="logo">
+          <ul id="navi">
+            <li>
+              <a href="index.html" id="myHome" class="active-page">
+                <br>HOME </a>
+            </li>
+            <li>
+              <a href="coffee-shop.html" id="myCoffee">
+                <br>COFFEE </a>
+            </li>
+            <li>
+              <a href="flower-shop.html" id="myFlowers">
+                <br>FLOWERS </a>
+            </li>
+            <li>
+              <a href="about.html" id="myAbout">
+                <br>ABOUT US </a>
+            </li>
+            <li>
+              <a href="bloomrewards.html" id="myBloom">
+                <br>REWARDS </a>
+            </li>
+          </ul>
+          <div class="cart-wrapper">
+            <a href="cart.html" class="cart-link" title="View Cart">
+              <img src="https://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg" alt="Cart" class="cart">
+            </a>
+            <span id="cartCount">0</span>
+          </div>
+        </nav>
+      </aside>
+      <div class="main-content-area">
+        <header>
+          <h1 id="season-category">Welcome Back</h1>
+          <div class="search-container">
+            <input type="text" placeholder="Find your comfort...">
+            <button class="search-btn">
+              <img src="images/search.png">
+            </button>
+          </div>
+          <div class="header-right">
+            <div class="user-profile">
+              <div class="profile-pic"></div>
+              <span>User</span>
+            </div>
+          </div>
+        </header>
+        <main class="main-content">
+          <section class="grand-opening-banner">
+            <h2>NOW BLOOMING</h2>
+            <h1>FLORÉ DE CAFÉ</h1>
+            <p>Find warmth and calm in every cup.</p>
+          </section>
+          <div class="filter-sort-bar" style="justify-content: center; margin-bottom: 40px;">
+            <div class="filters">
+              <button class="filter-pill active" id="seasonal-btn">Seasonal Special</button>
+              <button class="filter-pill" id="combo-btn">Best Combo</button>
+            </div>
+          </div>
+          <div class="content-wrapper" style="display: grid; grid-template-columns: 2fr 1fr; gap: 30px;">
+            <div class="left-panel">
+              <div id="seasonal-content" class="tab-content active-content">
+                <div class="coffee-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
+                  <div class="coffee-card">
+                    <div class="card-image">
+                      <img src="images/season-one.png">
+                    </div>
+                    <div class="card-info">
+                      <h3>Cool Florals</h3>
+                      <div class="card-footer">
+                        <button class="add-btn" onclick="addToCart('Cool Florals', 180)">Add ₱180</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="coffee-card">
+                    <div class="card-image">
+                      <img src="images/season-two.png">
+                    </div>
+                    <div class="card-info">
+                      <h3>Brewed Calm</h3>
+                      <div class="card-footer">
+                        <button class="add-btn" onclick="addToCart('Brewed Calm', 190)">Add ₱190</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="coffee-card">
+                    <div class="card-image">
+                      <img src="images/season-three.png">
+                    </div>
+                    <div class="card-info">
+                      <h3>Sip the Bloom</h3>
+                      <div class="card-footer">
+                        <button class="add-btn" onclick="addToCart('Sip the Bloom', 200)">Add ₱200</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="combo-content" class="tab-content" style="display: none;">
+                <div class="coffee-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
+                  <div class="coffee-card">
+                    <div class="card-image">
+                      <img src="images/combo-one.png">
+                    </div>
+                    <div class="card-info">
+                      <h3>Combo 1</h3>
+                      <button class="add-btn" onclick="addToCart('Combo 1', 250)">Add ₱250</button>
+                    </div>
+                  </div>
+                  <div class="coffee-card">
+                    <div class="card-image">
+                      <img src="images/combo-two.png">
+                    </div>
+                    <div class="card-info">
+                      <h3>Combo 2</h3>
+                      <button class="add-btn" onclick="addToCart('Combo 2', 250)">Add ₱250</button>
+                    </div>
+                  </div>
+                  <div class="coffee-card">
+                    <div class="card-image">
+                      <img src="images/combo-three.png">
+                    </div>
+                    <div class="card-info">
+                      <h3>Combo 3</h3>
+                      <button class="add-btn" onclick="addToCart('Combo 3', 250)">Add ₱250</button>
+                    </div>
+                  </div>
+                  <div class="coffee-card">
+                    <div class="card-image">
+                      <img src="images/combo-four.png">
+                    </div>
+                    <div class="card-info">
+                      <h3>Combo 4</h3>
+                      <button class="add-btn" onclick="addToCart('Combo 4', 250)">Add ₱250</button>
+                    </div>
+                  </div>
+                  <div class="coffee-card">
+                    <div class="card-image">
+                      <img src="images/combo-five.png">
+                    </div>
+                    <div class="card-info">
+                      <h3>Combo 5</h3>
+                      <button class="add-btn" onclick="addToCart('Combo 5', 250)">Add ₱250</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-panel">
+              <div id="special-seasonal-card" class="coffee-card active-content" style="height: 100%; border: 2px solid var(--accent-gold);">
+                <div class="card-image" style="height: 250px;">
+                  <img src="images/special-two.png">
+                </div>
+                <div class="card-info">
+                  <h4 style="color: var(--accent-gold);">TODAY'S SPECIAL</h4>
+                  <h3>Iced Lavender Honey</h3>
+                  <p class="desc">Bloom with Calm. Crafted with real lavender.</p>
+                  <div class="card-footer">
+                    <span class="price">₱180</span>
+                    <button class="add-btn" onclick="addToCart('Iced Lavender', 180)">Order Now</button>
+                  </div>
+                </div>
+              </div>
+              <div id="special-combo-card" class="coffee-card" style="height: 100%; display:none; border: 2px solid var(--accent-gold);">
+                <div class="card-image" style="height: 250px;">
+                  <img src="images/special-one.png">
+                </div>
+                <div class="card-info">
+                  <h4 style="color: var(--accent-gold);">PROMO</h4>
+                  <h3>Hibiscus Lime</h3>
+                  <p class="desc">A vibrant, refreshing boost.</p>
+                  <div class="card-footer">
+                    <span class="price">₱155</span>
+                    <button class="add-btn" onclick="addToCart('Hibiscus Lime', 155)">Order Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <aside class="rightbar">
+        <div class="purchase-panel">
+          <div class="wallet">
+            <div class="wallet-title">Available Balance</div>
+            <div class="wallet-money" id="sidebarPrice">₱0</div>
+            <div class="wallet-add">
+              <input id="addMoneyInput" type="number" placeholder="Amount" min="1">
+              <button id="addMoneyBtn">+</button>
+            </div>
+          </div>
+        </div>
+        <h2>Your Tray</h2>
+        <div id="sidebarCartItems" style="margin-top: 20px;"></div>
+        <div id="cartTotal" style="margin-top:20px; font-weight:700; font-size: 1.1rem; text-align: right;">Total: ₱0</div>
+        <button class="buyNow">Checkout</button>
+      </aside>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

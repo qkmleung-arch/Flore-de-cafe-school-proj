@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bloom Rewards • Floré de Café</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="page-container">
+      <aside class="sidebar">
+        <nav aria-label="Main Navigation">
+          <img src="images/flore-de-cafe.png" alt="Floré de Café" class="logo" />
+          <ul id="navi">
+            <li>
+              <a href="index.html" id="myHome">
+                <br>HOME </a>
+            </li>
+            <li>
+              <a href="coffee-shop.html" id="myCoffee">
+                <br>COFFEE </a>
+            </li>
+            <li>
+              <a href="flower-shop.html" id="myFlowers">
+                <br>FLOWERS </a>
+            </li>
+            <li>
+              <a href="about.html" id="myAbout">
+                <br>ABOUT US </a>
+            </li>
+            <li>
+              <a href="bloomrewards.html" id="myBloom" class="active-page">
+                <br>REWARDS </a>
+            </li>
+          </ul>
+          <div class="cart-wrapper">
+            <a href="cart.html" class="cart-link" title="View Cart">
+              <img src="https://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg" class="cart" alt="Cart" />
+            </a>
+            <span id="cartCount">0</span>
+          </div>
+        </nav>
+      </aside>
+      <div class="main-content-area">
+        <header>
+          <h1 id="season-category">BLOOM REWARDS</h1>
+          <div class="header-right">
+            <div class="user-profile">
+              <div class="profile-pic"></div>
+              <span>User</span>
+            </div>
+          </div>
+        </header>
+        <main class="main-content">
+          <div class="rewards-hero">
+            <h1>Sip, Collect, Bloom.</h1>
+            <p>Earn points on every coffee or bouquet and unlock exclusive perks.</p>
+          </div>
+          <section class="rewards-balance-card">
+            <div class="balance-info">
+              <h3>Your Bloom Points</h3>
+              <p class="points-big">
+                <span id="pointsTotal">1,500</span> pts
+              </p>
+              <p class="tier-status">Current Status: <span class="highlight">Lavender Tier</span>
+              </p>
+            </div>
+            <div class="progress-container">
+              <div class="progress-labels">
+                <span>Lavender</span>
+                <span>Rose (1,500 pts)</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 83%"></div>
+              </div>
+              <p class="progress-hint">Only <strong>250 points</strong> away from Rose Tier! </p>
+            </div>
+          </section>
+          <section class="rewards-section">
+            <h2 class="section-title">Membership Tiers</h2>
+            <div class="tier-grid">
+              <article class="tier-card">
+                <div class="tier-icon">
+                  <i class="fas fa-seedling"></i>
+                </div>
+                <h3>Chamomile</h3>
+                <p class="req">0–499 pts</p>
+                <ul class="tier-benefits">
+                  <li>
+                    <i class="fas fa-check"></i> Birthday mini cookie
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i> Early access to seasonal drops
+                  </li>
+                </ul>
+              </article>
+              <article class="tier-card active-tier-card">
+                <div class="tier-icon">
+                  <i class="fas fa-spa"></i>
+                </div>
+                <h3>Lavender</h3>
+                <p class="req">500–1499 pts</p>
+                <ul class="tier-benefits">
+                  <li>
+                    <i class="fas fa-check"></i> 1 free size upgrade/week
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i> 5% off flower bouquets
+                  </li>
+                </ul>
+                <div class="current-badge">Current</div>
+              </article>
+              <article class="tier-card">
+                <div class="tier-icon">
+                  <i class="fas fa-fan"></i>
+                </div>
+                <h3>Rose</h3>
+                <p class="req">1500+ pts</p>
+                <ul class="tier-benefits">
+                  <li>
+                    <i class="fas fa-check"></i> Monthly free brew
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i> 10% off any arrangement
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </section>
+          <section class="rewards-section">
+            <h2 class="section-title">Ways to Earn</h2>
+            <div class="earn-grid">
+              <div class="earn-card">
+                <img src="images/coffee.png" alt="Coffee">
+                <div class="earn-info">
+                  <h4>Buy a Drink</h4>
+                  <p>10 pts per ₱100</p>
+                </div>
+              </div>
+              <div class="earn-card">
+                <img src="images/flowers.png" alt="Flowers">
+                <div class="earn-info">
+                  <h4>Buy Flowers</h4>
+                  <p>8 pts per ₱100</p>
+                </div>
+              </div>
+              <div class="earn-card">
+                <img src="images/combo-one.png" alt="Combo">
+                <div class="earn-info">
+                  <h4>Combo Set</h4>
+                  <p>+120 Bonus Pts</p>
+                </div>
+              </div>
+              <div class="earn-card">
+                <img src="images/lavender-flower.png" alt="Seasonal">
+                <div class="earn-info">
+                  <h4>Seasonal Special</h4>
+                  <p>2x Points</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="rewards-section">
+            <h2 class="section-title">Redeem Rewards</h2>
+            <div class="redeem-grid">
+              <article class="redeem-card">
+                <div class="redeem-img">
+                  <img src="images/sunrise-pour.png" alt="Upgrade">
+                </div>
+                <div class="redeem-content">
+                  <h4>Free Size Upgrade</h4>
+                  <p class="cost">150 pts</p>
+                  <button class="redeem-btn" data-redeem="upgrade">Redeem</button>
+                </div>
+              </article>
+              <article class="redeem-card">
+                <div class="redeem-img">
+                  <img src="images/lavender-bend.png" alt="Latte">
+                </div>
+                <div class="redeem-content">
+                  <h4>Any Latte</h4>
+                  <p class="cost">600 pts</p>
+                  <button class="redeem-btn" data-redeem="latte">Redeem</button>
+                </div>
+              </article>
+              <article class="redeem-card">
+                <div class="redeem-img">
+                  <img src="images/combo-five.png" alt="Bundle">
+                </div>
+                <div class="redeem-content">
+                  <h4>Café + Blooms</h4>
+                  <p class="cost">1400 pts</p>
+                  <button class="redeem-btn" data-redeem="bundle">Redeem</button>
+                </div>
+              </article>
+            </div>
+          </section>
+        </main>
+      </div>
+      <aside class="rightbar">
+        <div class="purchase-panel">
+          <div class="wallet">
+            <div class="wallet-title">Available Balance</div>
+            <div class="wallet-money" id="sidebarPrice">₱0</div>
+            <div class="wallet-add">
+              <input id="addMoneyInput" type="number" placeholder="Amount" min="1" step="1">
+              <button id="addMoneyBtn">+</button>
+            </div>
+          </div>
+        </div>
+        <h2>Your Tray</h2>
+        <div id="sidebarCartItems"></div>
+        <div id="cartTotal" style="margin-top:18px; font-weight:700; text-align: right;">Total: ₱0</div>
+        <button class="buyNow">Checkout</button>
+      </aside>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florè de Cafè - Flowers</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="page-container">
+      <aside class="sidebar">
+        <nav aria-label="Main Navigation">
+          <img src="images/flore-de-cafe.png" alt="Logo" class="logo">
+          <ul id="navi">
+            <li>
+              <a href="index.html" id="myHome">
+                <br>HOME </a>
+            </li>
+            <li>
+              <a href="coffee-shop.html" id="myCoffee">
+                <br>COFFEE </a>
+            </li>
+            <li>
+              <a href="flower-shop.html" id="myFlowers" class="active-page">
+                <br>FLOWERS </a>
+            </li>
+            <li>
+              <a href="about.html" id="myAbout">
+                <br>ABOUT US </a>
+            </li>
+            <li>
+              <a href="bloomrewards.html" id="myBloom">
+                <br>REWARDS </a>
+            </li>
+          </ul>
+          <div class="cart-wrapper">
+            <a href="cart.html">
+              <img src="https://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg" class="cart">
+            </a>
+            <span id="cartCount">0</span>
+          </div>
+        </nav>
+      </aside>
+      <div class="main-content-area">
+        <header>
+          <h1 id="season-category">Fresh Blooms</h1>
+          <div class="header-right">
+            <div class="user-profile">
+              <div class="profile-pic"></div>
+              <span>User</span>
+            </div>
+          </div>
+        </header>
+        <main class="main-content">
+          <div class="filter-sort-bar">
+            <div class="filters">
+              <button class="filter-pill active" data-filter="all">All</button>
+              <button class="filter-pill" data-filter="bouquet">Bouquets</button>
+              <button class="filter-pill" data-filter="stem">Single Stem</button>
+              <button class="filter-pill" data-filter="seasonal">Seasonal</button>
+            </div>
+            <div class="sort-dropdown">
+              <span>Sort: </span>
+              <select id="sortSelect">
+                <option value="popularity">Popularity</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+          <div class="coffee-grid" id="flowerGrid">
+            <div class="coffee-card" data-category="stem" data-price="180" data-popularity="200">
+              <div class="card-image">
+                <img src="images/lavender-flower.png">
+              </div>
+              <div class="card-info">
+                <h3>Lavender</h3>
+                <p class="desc">Aromatic purple blooms.</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 4.9
+                </div>
+                <div class="card-footer">
+                  <span class="price">₱180</span>
+                  <button class="add-btn" onclick="addToCart('Lavender', 180)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="coffee-card" data-category="seasonal" data-price="220" data-popularity="300">
+              <div class="card-image">
+                <img src="images/sakura-flower.png">
+              </div>
+              <div class="card-info">
+                <h3>Sakura</h3>
+                <p class="desc">Delicate pink cherry blossoms.</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 5.0
+                </div>
+                <div class="card-footer">
+                  <span class="price">₱220</span>
+                  <button class="add-btn" onclick="addToCart('Sakura', 220)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="coffee-card" data-category="bouquet" data-price="150" data-popularity="250">
+              <div class="card-image">
+                <img src="images/rose-flower.png">
+              </div>
+              <div class="card-info">
+                <h3>Rose</h3>
+                <p class="desc">Classic vibrant red love.</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 4.8
+                </div>
+                <div class="card-footer">
+                  <span class="price">₱150</span>
+                  <button class="add-btn" onclick="addToCart('Rose', 150)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="coffee-card" data-category="stem" data-price="120" data-popularity="100">
+              <div class="card-image">
+                <img src="images/jasmine-flower.png">
+              </div>
+              <div class="card-info">
+                <h3>Jasmine</h3>
+                <p class="desc">Sweetly scented white flowers.</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 4.7
+                </div>
+                <div class="card-footer">
+                  <span class="price">₱120</span>
+                  <button class="add-btn" onclick="addToCart('Jasmine', 120)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="coffee-card" data-category="stem" data-price="160" data-popularity="90">
+              <div class="card-image">
+                <img src="images/elder-flower.png">
+              </div>
+              <div class="card-info">
+                <h3>Elder Flower</h3>
+                <p class="desc">Creamy white distinct blooms.</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 4.6
+                </div>
+                <div class="card-footer">
+                  <span class="price">₱160</span>
+                  <button class="add-btn" onclick="addToCart('Elder Flower', 160)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="coffee-card" data-category="bouquet" data-price="190" data-popularity="180">
+              <div class="card-image">
+                <img src="images/sunflower-flower.png">
+              </div>
+              <div class="card-info">
+                <h3>Sunflower</h3>
+                <p class="desc">Bright sun-loving blooms.</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 4.9
+                </div>
+                <div class="card-footer">
+                  <span class="price">₱190</span>
+                  <button class="add-btn" onclick="addToCart('Sunflower', 190)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="coffee-card" data-category="stem" data-price="100" data-popularity="120">
+              <div class="card-image">
+                <img src="images/cosmos-flower.png">
+              </div>
+              <div class="card-info">
+                <h3>Cosmos</h3>
+                <p class="desc">Dainty colorful daisy-like.</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 4.7
+                </div>
+                <div class="card-footer">
+                  <span class="price">₱100</span>
+                  <button class="add-btn" onclick="addToCart('Cosmos', 100)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="coffee-card" data-category="seasonal" data-price="140" data-popularity="140">
+              <div class="card-image">
+                <img src="images/dahlia-flower.png">
+              </div>
+              <div class="card-info">
+                <h3>Dahlia</h3>
+                <p class="desc">Intricate stunning petals.</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 4.8
+                </div>
+                <div class="card-footer">
+                  <span class="price">₱140</span>
+                  <button class="add-btn" onclick="addToCart('Dahlia', 140)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <aside class="rightbar">
+        <div class="purchase-panel">
+          <div class="wallet">
+            <div class="wallet-title">Available Balance</div>
+            <div class="wallet-money" id="sidebarPrice">₱0</div>
+            <div class="wallet-add">
+              <input id="addMoneyInput" type="number" placeholder="Amount" min="1">
+              <button id="addMoneyBtn">+</button>
+            </div>
+          </div>
+        </div>
+        <h2>Your Tray</h2>
+        <div id="sidebarCartItems"></div>
+        <div id="cartTotal" style="margin-top:18px; font-weight:700; text-align: right;">Total: ₱0</div>
+        <button class="buyNow">Checkout</button>
+      </aside>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

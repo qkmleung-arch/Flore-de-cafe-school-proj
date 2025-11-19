@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florè de Cafè</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="season-category">Choose Category</h1>
+    </header>
+    <div class="page">
+      <aside class="sidebar">
+        <nav aria-label="Main Navigation">
+          <img src="images/flore-de-cafe.jpg" alt="Florè de Cafè Shop" class="logo">
+          <ul id="navi">
+            <li>
+              <a href="index.html" id="myHome">
+                <br>HOME </a>
+            </li>
+            <li>
+              <a href="coffee-shop.html" id="myCoffee" class="active-page">
+                <br>COFFEE </a>
+            </li>
+            <li>
+              <a href="flower-shop.html" id="myFlowers">
+                <br>FLOWERS </a>
+            </li>
+            <li>
+              <a href="about.html" id="myAbout">
+                <br>ABOUT US </a>
+            </li>
+            <li>
+              <a href="bloomrewards.html" id="myBloom">
+                <br>REWARDS </a>
+            </li>
+          </ul>
+          <div class="cart-wrapper">
+            <a href="cart.html" class="cart-link" title="View Cart">
+              <img src="https://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg" alt="Cart" class="cart">
+            </a>
+            <span>0</span>
+          </div>
+        </nav>
+      </aside>
+      <main class="content">
+        <ul class="season-list" id="seasons">
+          <li>
+            <a href="coffee-shop.html" class="seasons-link">
+              <img src="images/everyday-coffee.png" class="seasonal">
+              </br>
+              <p class="blend-fonts">Everyday Coffee</p>
+            </a>
+          </li>
+          <li>
+            <a href="spring-shop.html" class="seasons-link">
+              <img src="images/spring-collection.png" class="seasonal">
+              </br>
+              <p class="blend-fonts">Spring Blends</p>
+            </a>
+          </li>
+          <li>
+            <a href="summer-shop.html" class="seasons-link">
+              <img src="images/summer-collection.png" class="seasonal">
+              </br>
+              <p class="blend-fonts">Summer Blends</p>
+            </a>
+          </li>
+          <li>
+            <a href="autumn-shop.html" class="seasons-link">
+              <img src="images/autumn-collection.png" class="seasonal">
+              </br>
+              <p class="blend-fonts">Autumn Blends</p>
+            </a>
+          </li>
+          <li>
+            <a href="winter-shop.html" class="seasons-link">
+              <img src="images/winter-collection.png" class="seasonal">
+              </br>
+              <p class="blend-fonts">Winter Blends</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="spring">
+          <li>
+            <img src="images/lavender-and-clover-honey-syrup.png" class="regular">
+            </br>
+            <p class="blend-fonts">
+            <dl></dl>
+            </p>
+          </li>
+          <li>
+            <dd class="lavenderclove">
+              <b>Lavender and Clover Honey Syrup <label id="lavendercloveprice">₱190</label>
+              </b>
+              <br>Topped with cold foam and a garnish of crushed, dried lavender buds. <br>It's a delicate, subtly floral twist on a classic iced cap. <label>
+                </br>
+                </br>SIZE <label class="label-qty">QUANTITY</label>
+                </br>
+                <div>
+                  <button class="size-lavenderclove" id="lavendercloveS" data-price="190">S</button>
+                  <button class="size-lavenderclove" id="lavendercloveM" data-price="205">M</button>
+                  <button class="size-lavenderclove" id="lavendercloveL" data-price="220">L</button>
+                  <button class="qty-lavenderclove" id="decreaseLavenderclove">-</button>
+                  <label id="countLavenderclove">1</label>
+                  <button class="qty-lavenderclove" id="increaseLavenderclove">+</button>
+                </div>
+                <br>
+                <br>
+                <button class="addCart" id="cartLavenderclove" data-img="images/lavender-and-clover-honey-syrup.png">Add to cart</button>
+                <button class="buyNow">Buy now</button>
+              </label>
+            </dd>
+          </li>
+          <li>
+            <img src="images/sakura-rose-cold-brew.png" class="regular">
+            </br>
+            <p class="blend-fonts">
+            <dl></dl>
+            </p>
+          </li>
+          <li>
+            <dd class="sakuracoldbrew">
+              <b>Sakura Rose Cold Brew <label id="sakuracoldbrewprice">₱200</label>
+              </b>
+              <br>Slow-steeped cold brew lightly sweetened with a bright rosewater and cherry syrup. <br>Poured over ice and topped with a pale pink, foamy cream cap, mimicking cherry <br>blossoms floating on water. <label>
+                </br>
+                </br>SIZE <label class="label-qty">QUANTITY</label>
+                </br>
+                <div>
+                  <button class="size-sakuracoldbrew" id="sakuracoldbrewS" data-price="200">S</button>
+                  <button class="size-sakuracoldbrew" id="sakuracoldbrewM" data-price="215">M</button>
+                  <button class="size-sakuracoldbrew" id="sakuracoldbrewL" data-price="230">L</button>
+                  <button class="qty-sakuracoldbrew" id="decreaseSakuracoldbrew">-</button>
+                  <label id="countSakuracoldbrew">1</label>
+                  <button class="qty-sakuracoldbrew" id="increaseSakuracoldbrew">+</button>
+                </div>
+                <br>
+                <br>
+                <button class="addCart" id="cartSakuracoldbrew" data-img="images/sakura-rose-cold-brew.png">Add to cart</button>
+                <button class="buyNow">Buy now</button>
+              </label>
+            </dd>
+          </li>
+        </ul>
+      </main>
+      <aside class="rightbar">
+        <div class="purchase-panel">
+          <div class="wallet">
+            <div class="wallet-title">Wallet</div>
+            <div class="wallet-money" id="sidebarPrice">₱0</div>
+            <div class="wallet-add">
+              <input id="addMoneyInput" type="number" placeholder="Amount (₱)" min="1" step="1">
+              <button id="addMoneyBtn">Add Money</button>
+            </div>
+          </div>
+        </div>
+        <h2>Cart</h2>
+        <div id="sidebarCartItems"></div>
+        <div id="cartTotal" style="margin-top:18px; font-weight:700;">Total: ₱0</div>
+        <div class="purchase-actions">
+          <button class="buyNow">Buy now</button>
+        </div>
+      </aside>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
